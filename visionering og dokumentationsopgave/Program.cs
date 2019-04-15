@@ -1,4 +1,4 @@
-﻿//VersionControll_Application:
+//VersionControll_Application:
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,17 +22,20 @@ namespace visionering_og_dokumentationsopgave
                 Console.WriteLine("Press 1 to play.");
                 Console.WriteLine("Press 2 to exit.");
                 tast = Console.ReadLine();
-
-                if (tast == "1")
-                {   
-                    question.selectQuestions();
-                }
-
-                if (tast == "2")
+                int i = 0;
+                while (i < 10)
                 {
-                    loop = false;
-                }
+                    if (tast == "1")
+                    {
+                        question.selectQuestions();
+                    }
 
+                    if (tast == "2")
+                    {
+                        loop = false;
+                    }
+                    i++;
+                }
             }
 
         }
