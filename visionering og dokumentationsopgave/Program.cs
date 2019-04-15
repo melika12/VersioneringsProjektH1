@@ -13,8 +13,7 @@ namespace visionering_og_dokumentationsopgave
         {
             bool loop = true;
             string tast = "";
-            Score score = new Score();
-            double currentScore = score.points(0, 0);
+            double score = 00.00;
             Questions question = new Questions();
 
             while (loop == true)
@@ -24,8 +23,8 @@ namespace visionering_og_dokumentationsopgave
                 tast = Console.ReadLine();
 
                 if (tast == "1")
-                {   
-                    question.selectQuestions();
+                {
+                    score = question.selectQuestions(score);
                 }
 
                 if (tast == "2")
@@ -40,11 +39,11 @@ namespace visionering_og_dokumentationsopgave
     class Questions
     {
         bool svar;
-        public void selectQuestions()
+        public double selectQuestions(double score)
         {
             int x = 4;
             Random random = new Random();
-            
+
             int randomNumber = random.Next(0, x);
             string randNum = Convert.ToString(randomNumber);
 
@@ -71,22 +70,29 @@ namespace visionering_og_dokumentationsopgave
                     break;
             }
 
-            isCorrect(svar);
+            double new_score = isCorrect(svar, score);
 
-
+            return new_score;
 
         }
 
-        public void isCorrect(bool a)
+        public double isCorrect(bool a, double score)
         {
+            double new_score = 00.00;
+
             if (a == true)
             {
                 Console.WriteLine("That is correct");
+                new_score = score + 1000.01;
+                Console.WriteLine("Your current total is " + new_score);
             }
             else
             {
                 Console.WriteLine("That is not correct.");
+                Console.WriteLine("Your score have been reset. Your score was " + score);
             }
+
+            return new_score;
         }
 
         public bool questionOne()
@@ -99,7 +105,7 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("B - A black hole");
             Console.WriteLine("C - Yo mama");
             tast = Console.ReadLine();
-            
+
             if (tast.ToLower() == "b")
             {
                 svar = true;
@@ -112,7 +118,7 @@ namespace visionering_og_dokumentationsopgave
         {
             bool svar = false;
             string tast = "";
-            Console.WriteLine ("Which year is it 2 years after, 4 years before?");
+            Console.WriteLine("Which year is it 2 years after, 4 years before?");
             Console.WriteLine("");
             Console.WriteLine("A - 2015");
             Console.WriteLine("B - 2019");
@@ -179,15 +185,6 @@ namespace visionering_og_dokumentationsopgave
             }
 
             return svar;
-        }
-
-    }
-    class Score
-    { 
-        public double points(double a, double b)
-        {
-            double point = a + b;
-            return point;
         }
     }
 }
