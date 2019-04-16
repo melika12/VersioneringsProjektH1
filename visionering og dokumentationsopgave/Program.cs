@@ -1,4 +1,4 @@
-//VersionControll_Application:
+﻿//VersionControll_Application:
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,44 +12,43 @@ namespace visionering_og_dokumentationsopgave
         static void Main(string[] args)
         {
             bool loop = true;
-            string tast = "";
-            double score = 00.00;
-            Questions question = new Questions();
+            string input = "";
+            Score score = new Score();
+            double currentScore = score.Points(0, 0);
+            QuestionsSettings question = new QuestionsSettings();
 
             while (loop == true)
             {
                 Console.WriteLine("Press 1 to play.");
                 Console.WriteLine("Press 2 to exit.");
-                tast = Console.ReadLine();
+                input = Console.ReadLine();
 
-                int i = 0;
-                while (i < 10)
-
-                {
-                    if (tast == "1")
-                    {
-                        score = question.selectQuestions(score);
-                    }
-
-                    if (tast == "2")
-
-                    {
-                     loop = false;
-                    }
-                    i++;
+                if (input == "1")
+                {   
+                    question.SelectQuestions();
                 }
+
+                if (input == "2")
+                {
+                    loop = false;
+                }
+
             }
 
         }
     }
-    class Questions
+    class QuestionsSettings
     {
-        bool svar;
-        public double selectQuestions(double score)
+        bool answer;
+        public void SelectQuestions()
         {
+            Questions newQuestion = new Questions();
+            
+
+
             int x = 4;
             Random random = new Random();
-
+            
             int randomNumber = random.Next(0, x);
             string randNum = Convert.ToString(randomNumber);
 
@@ -57,140 +56,99 @@ namespace visionering_og_dokumentationsopgave
             switch (randNum)
             {
                 case "0":
-                    svar = questionOne();
+                    answer = newQuestion.Question1();
                     break;
                 case "1":
-                    svar = questionTwo();
+                    answer = newQuestion.Question2();
                     break;
                 case "2":
-                    svar = questionThree();
+                    answer = newQuestion.Question3();
                     break;
                 case "3":
-                    svar = questionFour();
+                    answer = newQuestion.Question4();
                     break;
                 case "4":
-                    svar = questionFive();
+                    answer = newQuestion.Question5();
+                    break;
+                case "5":
+                    answer = newQuestion.Question6();
+                    break;
+                case "6":
+                    answer = newQuestion.Question7();
+                    break;
+                case "7":
+                    answer = newQuestion.Question8();
+                    break;
+                case "8":
+                    answer = newQuestion.Question9();
+                    break;
+                case "9":
+                    answer = newQuestion.Question10();
+                    break;
+                case "10":
+                    answer = newQuestion.Question10();
+                    break;
+                case "11":
+                    answer = newQuestion.Question11();
+                    break;
+                case "12":
+                    answer = newQuestion.Question12();
+                    break;
+                case "13":
+                    answer = newQuestion.Question13();
+                    break;
+                case "14":
+                    answer = newQuestion.Question14();
+                    break;
+                case "15":
+                    answer = newQuestion.Question15();
+                    break;
+                case "16":
+                    answer = newQuestion.Question16();
+                    break;
+                case "17":
+                    answer = newQuestion.Question17();
+                    break;
+                case "18":
+                    answer = newQuestion.Question18();
+                    break;
+                case "19":
+                    answer = newQuestion.Question19();
                     break;
 
                 default:
                     break;
             }
 
-            double new_score = isCorrect(svar, score);
+            IsCorrect(answer);
 
-            return new_score;
+
 
         }
 
-        public double isCorrect(bool a, double score)
+        public void IsCorrect(bool a)
         {
-            double new_score = 00.00;
-
             if (a == true)
             {
                 Console.WriteLine("That is correct");
-                new_score = score + 1000.01;
-                Console.WriteLine("Your current total is " + new_score);
             }
             else
             {
                 Console.WriteLine("That is not correct.");
-                Console.WriteLine("Your score have been reset. Your score was " + score);
             }
-
-            return new_score;
-        }
-
-        public bool questionOne()
-        {
-            bool svar = false;
-            string tast = "";
-            Console.WriteLine("What got the largest gravitational pull?");
-            Console.WriteLine("");
-            Console.WriteLine("A - The Sun");
-            Console.WriteLine("B - A black hole");
-            Console.WriteLine("C - Yo mama");
-            tast = Console.ReadLine();
-
-            if (tast.ToLower() == "b")
-            {
-                svar = true;
-            }
-
-            return svar;
-        }
-
-        public bool questionTwo()
-        {
-            bool svar = false;
-            string tast = "";
-            Console.WriteLine("Which year is it 2 years after, 4 years before?");
-            Console.WriteLine("");
-            Console.WriteLine("A - 2015");
-            Console.WriteLine("B - 2019");
-            Console.WriteLine("C - 2017");
-            tast = Console.ReadLine();
-
-            if (tast.ToLower() == "c")
-            {
-                svar = true;
-            }
-
-            return svar;
         }
 
 
-        public bool questionThree()
+
+       
+
+    }
+    class Score
+    { 
+        public double Points(double a, double b)
         {
-            bool svar = false;
-            string tast = "";
-            Console.WriteLine("Who is the president of the United States?");
-            Console.WriteLine("");
-            Console.WriteLine("A - Donald Trump");
-            Console.WriteLine("B - Barack Obama");
-            Console.WriteLine("C - Hillary Clinton");
-            tast = Console.ReadLine();
-
-            if (tast.ToLower() == "a")
-            {
-                svar = true;
-            }
-
-            return svar;
-        }
-
-        public bool questionFour()
-        {
-            bool svar = false;
-            string tast = "";
-            Console.WriteLine("Do Multiverses exist?");
-            Console.WriteLine("");
-            Console.WriteLine("A - Maybe");
-            Console.WriteLine("B - Yes");
-            Console.WriteLine("C - Only in fiction");
-            tast = Console.ReadLine();
-
-            svar = true;
-            return svar;
-        }
-
-        public bool questionFive()
-        {
-            bool svar = false;
-            string tast = "";
-            Console.WriteLine("Which Traditional beloved Disney movie?");
-            Console.WriteLine("");
-            Console.WriteLine("A - The Jungle Book");
-            Console.WriteLine("B - Beauty and the Beast");
-            Console.WriteLine("C - The Lion King");
-            tast = Console.ReadLine();
-
-            if (tast.ToLower() == "c")
-            {
-                svar = true;
-            }
-
-            return svar;
+            double point = a + b;
+            return point;
         }
     }
 }
