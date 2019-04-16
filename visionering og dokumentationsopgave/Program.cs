@@ -321,8 +321,9 @@ namespace visionering_og_dokumentationsopgave
 
             if (a == true)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("That is correct");
-
+                Console.ResetColor();
                 if (difficulty == "easy")
                 {
                     new_score = score + 1;
@@ -340,8 +341,10 @@ namespace visionering_og_dokumentationsopgave
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("That is not correct.");
                 Console.WriteLine("Your score has been reset. Your score was " + score);
+                Console.ResetColor();
             }
 
             return new_score;

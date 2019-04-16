@@ -19,11 +19,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - 1969");
             Console.WriteLine("B - 1971");
             Console.WriteLine("C - It's fake");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -36,11 +38,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - 205");
             Console.WriteLine("B - 20");
             Console.WriteLine("C - 40");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -54,11 +58,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - 5");
             Console.WriteLine("B - 7");
             Console.WriteLine("C - 3");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -71,11 +77,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Günther von Kluge");
             Console.WriteLine("B - Paul Ludwig Ewald von Kleist");
             Console.WriteLine("C - Heinrich Himmler");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -88,11 +96,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - McDonald's");
             Console.WriteLine("B - Nestle");
             Console.WriteLine("C - Cargill");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "b")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -106,11 +116,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Dwayne 'The Rock' Johnson");
             Console.WriteLine("B - Robert Downey Jr.");
             Console.WriteLine("C - George Clooney");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -123,11 +135,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - 2.7 trillion digits");
             Console.WriteLine("B - 22 trillion digits");
             Console.WriteLine("C - 31.4 trillion digits");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -140,11 +154,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - 1000 of course");
             Console.WriteLine("B - Around 500 at most");
             Console.WriteLine("C - The record is at 750");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -157,11 +173,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Somalia");
             Console.WriteLine("B - Kenya");
             Console.WriteLine("C - Niger");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
 
         }
@@ -175,11 +193,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Machetes");
             Console.WriteLine("B - Spears");
             Console.WriteLine("C - Water Pistols");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -192,11 +212,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - A roughnech");
             Console.WriteLine("B - A dead animal hunter");
             Console.WriteLine("C - A animal hunter");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "b")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -209,11 +231,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Sweat");
             Console.WriteLine("B - Spit");
             Console.WriteLine("C - Earwax");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -226,11 +250,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Barfing");
             Console.WriteLine("B - Farting");
             Console.WriteLine("C - Eating with elbows at the table");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "b")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -243,11 +269,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Chewing food noisily");
             Console.WriteLine("B - Water Pistols");
             Console.WriteLine("C - Tipping");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -260,11 +288,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Sits in bars, waiting to find someone for the night");
             Console.WriteLine("B - Bying themselves chocolate");
             Console.WriteLine("C - Sending themselves flowers");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -277,11 +307,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Coca cola");
             Console.WriteLine("B - China");
             Console.WriteLine("C - He has always been red");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -294,11 +326,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Smile");
             Console.WriteLine("B - Sneeze");
             Console.WriteLine("C - Shown his hands");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -311,11 +345,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - Undercooked the food");
             Console.WriteLine("B - Dipping fingers in the soft drinks and ice cream");
             Console.WriteLine("C - Putting bodily fluids in the food");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -328,11 +364,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - On the Moon");
             Console.WriteLine("B - On the Sun");
             Console.WriteLine("C - On the Earth");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
@@ -345,11 +383,13 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("A - One World Trade Center");
             Console.WriteLine("B - Shanghai Tower");
             Console.WriteLine("C - Burj Khalifa");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
                 answer = true;
             }
+            Console.ResetColor();
             return answer;
         }
 
