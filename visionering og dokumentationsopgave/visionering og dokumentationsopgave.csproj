@@ -8,11 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>visionering_og_dokumentationsopgave</RootNamespace>
     <AssemblyName>visionering og dokumentationsopgave</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Easy.cs" />
-    <Compile Include="Hard.cs" />
     <Compile Include="Medium.cs" />
+    <Compile Include="Hard.cs" />
+    <Compile Include="Score.cs" />
+    <Compile Include="QuestionsSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
