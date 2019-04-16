@@ -60,6 +60,7 @@ namespace visionering_og_dokumentationsopgave
     class QuestionsSettings
     {
         bool answer;
+        string difficulty;
         public double QuestionsEasy(double score)
         {
             Easy newEasy = new Easy();
@@ -137,8 +138,8 @@ namespace visionering_og_dokumentationsopgave
                 default:
                     break;
             }
-
-            double new_score = IsCorrect(answer, score);
+            difficulty = "easy";
+            double new_score = IsCorrect(answer, score, difficulty);
 
             return new_score;
 
@@ -222,7 +223,8 @@ namespace visionering_og_dokumentationsopgave
                     break;
             }
 
-            double new_score = IsCorrect(answer, score);
+            difficulty = "medium";
+            double new_score = IsCorrect(answer, score, difficulty);
 
             return new_score;
 
@@ -306,20 +308,34 @@ namespace visionering_og_dokumentationsopgave
                     break;
             }
 
-            double new_score = IsCorrect(answer, score);
+            difficulty = "hard";
+            double new_score = IsCorrect(answer, score, difficulty);
 
             return new_score;
 
         }
 
-        public double IsCorrect(bool a, double score)
+        public double IsCorrect(bool a, double score, string difficulty)
         {
             double new_score = 00.00;
 
             if (a == true)
             {
                 Console.WriteLine("That is correct");
-                new_score = score + 1;
+
+                if (difficulty == "easy")
+                {
+                    new_score = score + 1;
+                }
+                else if (difficulty == "medium")
+                {
+                    new_score = score + 3;
+                }
+                else if (difficulty == "hard")
+                {
+                    new_score = score + 15;
+                }
+
                 Console.WriteLine("Your current total is " + new_score);
             }
             else
