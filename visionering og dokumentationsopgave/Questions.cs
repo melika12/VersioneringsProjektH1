@@ -100,9 +100,9 @@ namespace visionering_og_dokumentationsopgave
             string input = "";
             Console.WriteLine("Who ended world war 2");
             Console.WriteLine("");
-            Console.WriteLine("A - The Chineese");
+            Console.WriteLine("A - The Chinese");
             Console.WriteLine("B - Heil Hitler");
-            Console.WriteLine("C - Nuke them - USA");
+            Console.WriteLine("C - Nuke them (USA)");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -149,19 +149,16 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is       ?");
+            Console.WriteLine("What does 'Bing' stand for?");
             Console.WriteLine("");
-            Console.WriteLine("A - Void");
-            Console.WriteLine("B - Void");
-            Console.WriteLine("C - Void");
+            Console.WriteLine("A - Because it's not Google");
+            Console.WriteLine("B - It doesn't stand for anything");
+            Console.WriteLine("C - Being intelligent never grants");
             input = Console.ReadLine();
-            if (input.ToLower() == "a" || input.ToLower() == "b" || input.ToLower() == "c")
+            if (input.ToLower() == "a")
             {
-                answer = false;
+                answer = true;
             }
-            Console.WriteLine("Nothing here?");
-            Console.WriteLine("Nothing here?");
-            Console.WriteLine("Nothing here?");
             return answer;
             
         }
@@ -223,9 +220,9 @@ namespace visionering_og_dokumentationsopgave
             string input = "";
             Console.WriteLine("The Danish Queen's name is?");
             Console.WriteLine("");
-            Console.WriteLine("A - Bob");
+            Console.WriteLine("A - Elizabeth 2.");
             Console.WriteLine("B - Margrethe 2.");
-            Console.WriteLine("C - Margrethe 22.");
+            Console.WriteLine("C - Margrethe 1.");
             input = Console.ReadLine();
             if (input.ToLower() == "b")
             {
@@ -310,7 +307,7 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("");
             Console.WriteLine("A - Pentagon");
             Console.WriteLine("B - Pennsylvania");
-            Console.WriteLine("C - Pakistan");
+            Console.WriteLine("C - Palm Springs");
             input = Console.ReadLine();
             if (input.ToLower() == "b")
             {

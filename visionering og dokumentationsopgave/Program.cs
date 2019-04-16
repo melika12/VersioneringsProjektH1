@@ -13,8 +13,7 @@ namespace visionering_og_dokumentationsopgave
         {
             bool loop = true;
             string input = "";
-            Score score = new Score();
-            double currentScore = score.Points(0, 0);
+            double score = 00.00;
             QuestionsSettings question = new QuestionsSettings();
 
             while (loop == true)
@@ -22,15 +21,19 @@ namespace visionering_og_dokumentationsopgave
                 Console.WriteLine("Press 1 to play.");
                 Console.WriteLine("Press 2 to exit.");
                 input = Console.ReadLine();
-
-                if (input == "1")
-                {   
-                    question.SelectQuestions();
-                }
-
-                if (input == "2")
+                int i = 0;
+                while (i < 20)
                 {
-                    loop = false;
+                    if (input == "1")
+                    {
+                        score = question.SelectQuestions(score);
+                    }
+
+                    if (input == "2")
+                    {
+                        loop = false;
+                    }
+                    i++;
                 }
 
             }
@@ -40,13 +43,13 @@ namespace visionering_og_dokumentationsopgave
     class QuestionsSettings
     {
         bool answer;
-        public void SelectQuestions()
+        public double SelectQuestions(double score)
         {
             Questions newQuestion = new Questions();
             
 
 
-            int x = 4;
+            int x = 19;
             Random random = new Random();
             
             int randomNumber = random.Next(0, x);
@@ -120,35 +123,29 @@ namespace visionering_og_dokumentationsopgave
                     break;
             }
 
-            IsCorrect(answer);
+            double new_score = IsCorrect(answer, score);
 
-
+            return new_score;
 
         }
 
-        public void IsCorrect(bool a)
+        public double IsCorrect(bool a, double score)
         {
+            double new_score = 00.00;
+
             if (a == true)
             {
                 Console.WriteLine("That is correct");
+                new_score = score + 1;
+                Console.WriteLine("Your current total is " + new_score);
             }
             else
             {
                 Console.WriteLine("That is not correct.");
+                Console.WriteLine("Your score has been reset. Your score was " + score);
             }
-        }
 
-
-
-       
-
-    }
-    class Score
-    { 
-        public double Points(double a, double b)
-        {
-            double point = a + b;
-            return point;
+            return new_score;
         }
     }
 }
