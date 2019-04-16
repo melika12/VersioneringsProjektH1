@@ -34,6 +34,7 @@ namespace visionering_og_dokumentationsopgave
                     if (input == "2")
                     {
                         loop = false;
+                        break;
                     }
                 int i = 0;
                 while (i < 19)

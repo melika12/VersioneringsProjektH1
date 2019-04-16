@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace visionering_og_dokumentationsopgave
 {
-    class Medium
+    class Hard
     {
         //Question Section:
 
@@ -14,13 +14,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What got the largest gravitational pull?");
+            Console.WriteLine("Which year did the first man walk the moon?");
             Console.WriteLine("");
-            Console.WriteLine("A - The Sun");
-            Console.WriteLine("B - A black hole");
-            Console.WriteLine("C - Yo mama");
+            Console.WriteLine("A - 1969");
+            Console.WriteLine("B - 1971");
+            Console.WriteLine("C - It's fake");
             input = Console.ReadLine();
-            if (input.ToLower() == "b")
+            if (input.ToLower() == "a")
             {
                 answer = true;
             }
@@ -31,11 +31,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Which year is it 2 years after, 4 years before?");
+            Console.WriteLine("How many minutes is a day longer on Mars than on Earth?");
             Console.WriteLine("");
-            Console.WriteLine("A - 2015");
-            Console.WriteLine("B - 2019");
-            Console.WriteLine("C - 2017");
+            Console.WriteLine("A - 205");
+            Console.WriteLine("B - 20");
+            Console.WriteLine("C - 40");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -49,13 +49,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who is the president of the United States?");
+            Console.WriteLine("How many planets is Earth away from the Sun?");
             Console.WriteLine("");
-            Console.WriteLine("A - Donald Trump");
-            Console.WriteLine("B - Barack Obama");
-            Console.WriteLine("C - Hillary Clinton");
+            Console.WriteLine("A - 5");
+            Console.WriteLine("B - 7");
+            Console.WriteLine("C - 3");
             input = Console.ReadLine();
-            if (input.ToLower() == "a")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -66,13 +66,16 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Do Multiverses exist?");
+            Console.WriteLine("Who died first of the german generals in World War II?");
             Console.WriteLine("");
-            Console.WriteLine("A - Maybe");
-            Console.WriteLine("B - Yes");
-            Console.WriteLine("C - Only in fiction");
+            Console.WriteLine("A - Günther von Kluge");
+            Console.WriteLine("B - Paul Ludwig Ewald von Kleist");
+            Console.WriteLine("C - Heinrich Himmler");
             input = Console.ReadLine();
-            answer = true;
+            if (input.ToLower() == "a")
+            {
+                answer = true;
+            }
             return answer;
         }
 
@@ -80,13 +83,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Which Traditional beloved Disney movie?");
+            Console.WriteLine("Which food company was the second biggest in the world in 2018?");
             Console.WriteLine("");
-            Console.WriteLine("A - The Jungle Book");
-            Console.WriteLine("B - Beauty and the Beast");
-            Console.WriteLine("C - The Lion King");
+            Console.WriteLine("A - McDonald's");
+            Console.WriteLine("B - Nestle");
+            Console.WriteLine("C - Cargill");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -98,11 +101,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who ended world war 2");
+            Console.WriteLine("Who is the world's highest-paid actor in the world in 2018?");
             Console.WriteLine("");
-            Console.WriteLine("A - The Chinese");
-            Console.WriteLine("B - Heil Hitler");
-            Console.WriteLine("C - Nuke them (USA)");
+            Console.WriteLine("A - Dwayne 'The Rock' Johnson");
+            Console.WriteLine("B - Robert Downey Jr.");
+            Console.WriteLine("C - George Clooney");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -115,13 +118,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is red");
+            Console.WriteLine("How many decimals has been found in pi?");
             Console.WriteLine("");
-            Console.WriteLine("A - Coca Cola");
-            Console.WriteLine("B - Blood");
-            Console.WriteLine("C - Water");
+            Console.WriteLine("A - 2.7 trillion digits");
+            Console.WriteLine("B - 22 trillion digits");
+            Console.WriteLine("C - 31.4 trillion digits");
             input = Console.ReadLine();
-            if (input.ToLower() == "b")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -132,13 +135,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("3*3+3+3*3+3?");
+            Console.WriteLine("How many legs does a millipede have?");
             Console.WriteLine("");
-            Console.WriteLine("A - Math is stupid");
-            Console.WriteLine("B - 3*pi");
-            Console.WriteLine("C - 24");
+            Console.WriteLine("A - 1000 of course");
+            Console.WriteLine("B - Around 500 at most");
+            Console.WriteLine("C - The record is at 750");
             input = Console.ReadLine();
-            if (input.ToLower() == "c" || input.ToLower() == "a")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -149,11 +152,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What does 'Bing' stand for?");
+            Console.WriteLine("At the beginning of the 1990s which country had the most camels?");
             Console.WriteLine("");
-            Console.WriteLine("A - Because it's not Google");
-            Console.WriteLine("B - It doesn't stand for anything");
-            Console.WriteLine("C - Being intelligent never grants");
+            Console.WriteLine("A - Somalia");
+            Console.WriteLine("B - Kenya");
+            Console.WriteLine("C - Niger");
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
@@ -167,11 +170,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who is Pewdiepie?");
+            Console.WriteLine("What is illegal to duel with in Massachusetts?");
             Console.WriteLine("");
-            Console.WriteLine("A - A antisocial psychopath in jail");
-            Console.WriteLine("B - A german youtuber");
-            Console.WriteLine("C - A swedish original content creator ");
+            Console.WriteLine("A - Machetes");
+            Console.WriteLine("B - Spears");
+            Console.WriteLine("C - Water Pistols");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -184,13 +187,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is acdc?");
+            Console.WriteLine("What can you become licensed to in Texas for 150$?");
             Console.WriteLine("");
-            Console.WriteLine("A - An icecream sandwich");
-            Console.WriteLine("B - A country");
-            Console.WriteLine("C - A rock band");
+            Console.WriteLine("A - A roughnech");
+            Console.WriteLine("B - A dead animal hunter");
+            Console.WriteLine("C - A animal hunter");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -201,13 +204,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is GIT?");
+            Console.WriteLine("What does people produce more of when they are frightened?");
             Console.WriteLine("");
-            Console.WriteLine("A - A program");
-            Console.WriteLine("B - A sweet website");
-            Console.WriteLine("C - The new youtube");
+            Console.WriteLine("A - Sweat");
+            Console.WriteLine("B - Spit");
+            Console.WriteLine("C - Earwax");
             input = Console.ReadLine();
-            if (input.ToLower() == "a")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -218,11 +221,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("The Danish Queen's name is?");
+            Console.WriteLine("What did The Emperor Claudius legalize at banquets?");
             Console.WriteLine("");
-            Console.WriteLine("A - Elizabeth 2.");
-            Console.WriteLine("B - Margrethe 2.");
-            Console.WriteLine("C - Margrethe 1.");
+            Console.WriteLine("A - Barfing");
+            Console.WriteLine("B - Farting");
+            Console.WriteLine("C - Eating with elbows at the table");
             input = Console.ReadLine();
             if (input.ToLower() == "b")
             {
@@ -235,11 +238,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who are the real Logan");
+            Console.WriteLine("What is banned by law in Japanese restaurants?");
             Console.WriteLine("");
-            Console.WriteLine("A - He's in our class");
-            Console.WriteLine("B - Dead");
-            Console.WriteLine("C - pfff: Wolverrine!");
+            Console.WriteLine("A - Chewing food noisily");
+            Console.WriteLine("B - Water Pistols");
+            Console.WriteLine("C - Tipping");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -252,13 +255,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is Mars One?");
+            Console.WriteLine("What does 15% of women on Valentine's Day");
             Console.WriteLine("");
-            Console.WriteLine("A - A project trying to settle on Mars");
-            Console.WriteLine("B - A new type of Cocio");
-            Console.WriteLine("C - A movie");
+            Console.WriteLine("A - Sits in bars, waiting to find someone for the night");
+            Console.WriteLine("B - Bying themselves chocolate");
+            Console.WriteLine("C - Sending themselves flowers");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "")
             {
                 answer = true;
             }
@@ -269,11 +272,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("In Dumbo, what type are the little animal?");
+            Console.WriteLine("Who's fault was it that Santa Claus became red?");
             Console.WriteLine("");
-            Console.WriteLine("A - A mouse");
-            Console.WriteLine("B - A rat");
-            Console.WriteLine("C - There is no little animal");
+            Console.WriteLine("A - Coca cola");
+            Console.WriteLine("B - China");
+            Console.WriteLine("C - He has always been red");
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
@@ -286,13 +289,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is the best Cola?");
+            Console.WriteLine("What has Abraham Lincoln never done in any photographs?");
             Console.WriteLine("");
-            Console.WriteLine("A - Mauntain DEW!!!");
-            Console.WriteLine("B - Pepsi");
-            Console.WriteLine("C - Coca Cola");
+            Console.WriteLine("A - Smile");
+            Console.WriteLine("B - Sneeze");
+            Console.WriteLine("C - Shown his hands");
             input = Console.ReadLine();
-            if (input.ToLower() == "a" || input.ToLower() == "c")
+            if (input.ToLower() == "a")
             {
                 answer = true;
             }
@@ -303,13 +306,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Which is the only American state to begin with the letter 'p'?");
+            Console.WriteLine("What have 26% of McDonald's Ontario admitted doing?");
             Console.WriteLine("");
-            Console.WriteLine("A - Pentagon");
-            Console.WriteLine("B - Pennsylvania");
-            Console.WriteLine("C - Palm Springs");
+            Console.WriteLine("A - Undercooked the food");
+            Console.WriteLine("B - Dipping fingers in the soft drinks and ice cream");
+            Console.WriteLine("C - Putting bodily fluids in the food");
             input = Console.ReadLine();
-            if (input.ToLower() == "b")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -337,11 +340,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What killed the Dinosaurs?");
+            Console.WriteLine("What is the tallest building in the world?");
             Console.WriteLine("");
-            Console.WriteLine("A - Humans");
-            Console.WriteLine("B - Aliens");
-            Console.WriteLine("C - A huge asteroid");
+            Console.WriteLine("A - One World Trade Center");
+            Console.WriteLine("B - Shanghai Tower");
+            Console.WriteLine("C - Burj Khalifa");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {

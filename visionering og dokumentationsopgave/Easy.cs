@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace visionering_og_dokumentationsopgave
 {
-    class Medium
+    class Easy
     {
         //Question Section:
 
@@ -86,7 +86,7 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("Who is the wizard there are 7 books and 8 movies about?");
             Console.WriteLine("");
             Console.WriteLine("A - Newt Scamander");
-            Console.WriteLine("B - Merlin");
+            Console.WriteLine("B - Rubeus Hagrid");
             Console.WriteLine("C - Harry Potter");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
@@ -101,13 +101,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who ended world war 2");
+            Console.WriteLine("Who is Jesus?");
             Console.WriteLine("");
-            Console.WriteLine("A - The Chinese");
-            Console.WriteLine("B - Heil Hitler");
-            Console.WriteLine("C - Nuke them (USA)");
+            Console.WriteLine("A - Son of God");
+            Console.WriteLine("B - A student in the school, right?");
+            Console.WriteLine("C - Me of course");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "a")
             {
                 answer = true;
             }
@@ -135,13 +135,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("3*3+3+3*3+3?");
+            Console.WriteLine("What language does we code in?");
             Console.WriteLine("");
-            Console.WriteLine("A - Math is stupid");
-            Console.WriteLine("B - 3*pi");
-            Console.WriteLine("C - 24");
+            Console.WriteLine("A - HTML");
+            Console.WriteLine("B - PythonScript");
+            Console.WriteLine("C - C#");
             input = Console.ReadLine();
-            if (input.ToLower() == "c" || input.ToLower() == "a")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -152,11 +152,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What does 'Bing' stand for?");
+            Console.WriteLine("What is Mario's buddy from the Super Mario games name?");
             Console.WriteLine("");
-            Console.WriteLine("A - Because it's not Google");
-            Console.WriteLine("B - It doesn't stand for anything");
-            Console.WriteLine("C - Being intelligent never grants");
+            Console.WriteLine("A - Mario Jr.");
+            Console.WriteLine("B - Luigi");
+            Console.WriteLine("C - Sonic");
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
@@ -172,11 +172,11 @@ namespace visionering_og_dokumentationsopgave
             string input = "";
             Console.WriteLine("Who is Pewdiepie?");
             Console.WriteLine("");
-            Console.WriteLine("A - A antisocial psychopath in jail");
-            Console.WriteLine("B - A german youtuber");
-            Console.WriteLine("C - A swedish original content creator ");
+            Console.WriteLine("A - An antisocial psychopath in jail");
+            Console.WriteLine("B - A youtuber");
+            Console.WriteLine("C - An actor");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -187,7 +187,7 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is acdc?");
+            Console.WriteLine("What is AC/DC?");
             Console.WriteLine("");
             Console.WriteLine("A - An icecream sandwich");
             Console.WriteLine("B - A country");
@@ -221,13 +221,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("The Danish Queen's name is?");
+            Console.WriteLine("What is the operationsystem of this computer?");
             Console.WriteLine("");
-            Console.WriteLine("A - Elizabeth 2.");
-            Console.WriteLine("B - Margrethe 2.");
-            Console.WriteLine("C - Margrethe 1.");
+            Console.WriteLine("A - Mac OS");
+            Console.WriteLine("B - Linux");
+            Console.WriteLine("C - Windows");
             input = Console.ReadLine();
-            if (input.ToLower() == "b")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -238,11 +238,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who are the real Logan");
+            Console.WriteLine("Which movie is Wolverine from?");
             Console.WriteLine("");
-            Console.WriteLine("A - He's in our class");
-            Console.WriteLine("B - Dead");
-            Console.WriteLine("C - pfff: Wolverrine!");
+            Console.WriteLine("A - Avengers");
+            Console.WriteLine("B - Justice League");
+            Console.WriteLine("C - X-men");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -255,13 +255,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is Mars One?");
+            Console.WriteLine("What is a Golden Retriever?");
             Console.WriteLine("");
-            Console.WriteLine("A - A project trying to settle on Mars");
-            Console.WriteLine("B - A new type of Cocio");
-            Console.WriteLine("C - A movie");
+            Console.WriteLine("A - An award");
+            Console.WriteLine("B - A dog race");
+            Console.WriteLine("C - A computer model");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -275,7 +275,7 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("In Dumbo, what type are the little animal?");
             Console.WriteLine("");
             Console.WriteLine("A - A mouse");
-            Console.WriteLine("B - A rat");
+            Console.WriteLine("B - A cat");
             Console.WriteLine("C - There is no little animal");
             input = Console.ReadLine();
             if (input.ToLower() == "a")
@@ -289,13 +289,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is the best Cola?");
+            Console.WriteLine("In what film trilogy did they use to destroy a ring?");
             Console.WriteLine("");
-            Console.WriteLine("A - Mauntain DEW!!!");
-            Console.WriteLine("B - Pepsi");
-            Console.WriteLine("C - Coca Cola");
+            Console.WriteLine("A - Harry Potter");
+            Console.WriteLine("B - Lord of the Rings");
+            Console.WriteLine("C - The Hobbit");
             input = Console.ReadLine();
-            if (input.ToLower() == "a" || input.ToLower() == "c")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -306,11 +306,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Which is the only American state to begin with the letter 'p'?");
+            Console.WriteLine("Who was the first man to walk the moon?");
             Console.WriteLine("");
-            Console.WriteLine("A - Pentagon");
-            Console.WriteLine("B - Pennsylvania");
-            Console.WriteLine("C - Palm Springs");
+            Console.WriteLine("A - Kevin Magnussen");
+            Console.WriteLine("B - Neil Armstrong");
+            Console.WriteLine("C - Lance Legstrong");
             input = Console.ReadLine();
             if (input.ToLower() == "b")
             {
@@ -323,11 +323,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Where would you find the Sea of Tranquility?");
+            Console.WriteLine("What is paper made of?");
             Console.WriteLine("");
-            Console.WriteLine("A - On the Moon");
-            Console.WriteLine("B - On the Sun");
-            Console.WriteLine("C - On the Earth");
+            Console.WriteLine("A - Trees");
+            Console.WriteLine("B - Grass");
+            Console.WriteLine("C - Plants");
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {

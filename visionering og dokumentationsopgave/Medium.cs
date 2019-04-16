@@ -49,11 +49,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("?");
+            Console.WriteLine("What is Tupperware?");
             Console.WriteLine("");
-            Console.WriteLine("A - Donald Trump");
-            Console.WriteLine("B - Barack Obama");
-            Console.WriteLine("C - Hillary Clinton");
+            Console.WriteLine("A - Brand");
+            Console.WriteLine("B - Porcelain");
+            Console.WriteLine("C - Clothes");
             input = Console.ReadLine();
             if (input.ToLower() == "a")
             {
@@ -80,7 +80,7 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Which Traditional beloved Disney movie?");
+            Console.WriteLine("Which Traditional beloved Disney movie is reanimated and in theaters soon?");
             Console.WriteLine("");
             Console.WriteLine("A - The Jungle Book");
             Console.WriteLine("B - Beauty and the Beast");
@@ -115,13 +115,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is red");
+            Console.WriteLine("What is black and gives a lot of energy");
             Console.WriteLine("");
-            Console.WriteLine("A - Coca Cola");
-            Console.WriteLine("B - Blood");
-            Console.WriteLine("C - Water");
+            Console.WriteLine("A - Liquorise");
+            Console.WriteLine("B - Blood sausage");
+            Console.WriteLine("C - Coffee");
             input = Console.ReadLine();
-            if (input.ToLower() == "b")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -155,7 +155,7 @@ namespace visionering_og_dokumentationsopgave
             Console.WriteLine("B - It doesn't stand for anything");
             Console.WriteLine("C - Being intelligent never grants");
             input = Console.ReadLine();
-            if (input.ToLower() == "a")
+            if (input.ToLower() == "a" || input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -167,11 +167,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who is Pewdiepie?");
+            Console.WriteLine("What movie series is Bellatrix Lestrange from?");
             Console.WriteLine("");
-            Console.WriteLine("A - A antisocial psychopath in jail");
-            Console.WriteLine("B - A german youtuber");
-            Console.WriteLine("C - A swedish original content creator ");
+            Console.WriteLine("A - Fantastic Beasts and where to find them");
+            Console.WriteLine("B - Lord of the Rings");
+            Console.WriteLine("C - Harry Potter");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -184,13 +184,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is acdc?");
+            Console.WriteLine("What kind of game is Counter Strike?");
             Console.WriteLine("");
-            Console.WriteLine("A - An icecream sandwich");
-            Console.WriteLine("B - A country");
-            Console.WriteLine("C - A rock band");
+            Console.WriteLine("A - A fighting video game");
+            Console.WriteLine("B - A shooting game");
+            Console.WriteLine("C - A racing game");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -201,13 +201,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is GIT?");
+            Console.WriteLine("Who is Leonardo Da Vinci?");
             Console.WriteLine("");
-            Console.WriteLine("A - A program");
-            Console.WriteLine("B - A sweet website");
-            Console.WriteLine("C - The new youtube");
+            Console.WriteLine("A - An actor");
+            Console.WriteLine("B - A popstar");
+            Console.WriteLine("C - A true genius");
             input = Console.ReadLine();
-            if (input.ToLower() == "a")
+            if (input.ToLower() == "c")
             {
                 answer = true;
             }
@@ -235,11 +235,11 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Who are the real Logan");
+            Console.WriteLine("Who was Charles Darwin?");
             Console.WriteLine("");
-            Console.WriteLine("A - He's in our class");
-            Console.WriteLine("B - Dead");
-            Console.WriteLine("C - pfff: Wolverrine!");
+            Console.WriteLine("A - A scientist");
+            Console.WriteLine("B - An author");
+            Console.WriteLine("C - A biologist among other things");
             input = Console.ReadLine();
             if (input.ToLower() == "c")
             {
@@ -269,13 +269,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("In Dumbo, what type are the little animal?");
+            Console.WriteLine("Who plays Genie in the new reanimated movie of 'Aladdin'?");
             Console.WriteLine("");
-            Console.WriteLine("A - A mouse");
-            Console.WriteLine("B - A rat");
-            Console.WriteLine("C - There is no little animal");
+            Console.WriteLine("A - Kevin Hart");
+            Console.WriteLine("B - Will Smith");
+            Console.WriteLine("C - Arnold Schwarznegger");
             input = Console.ReadLine();
-            if (input.ToLower() == "a")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -286,13 +286,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What is the best Cola?");
+            Console.WriteLine("What does WOW stand for?");
             Console.WriteLine("");
-            Console.WriteLine("A - Mauntain DEW!!!");
-            Console.WriteLine("B - Pepsi");
-            Console.WriteLine("C - Coca Cola");
+            Console.WriteLine("A - It doesn't stand for anything, it's an impression when you are surprised");
+            Console.WriteLine("B - World of Warcraft, it's a game");
+            Console.WriteLine("C - World of Web");
             input = Console.ReadLine();
-            if (input.ToLower() == "a" || input.ToLower() == "c")
+            if (input.ToLower() == "a" || input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -320,13 +320,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("Where would you find the Sea of Tranquility?");
+            Console.WriteLine("Where is Sunny Beach?");
             Console.WriteLine("");
-            Console.WriteLine("A - On the Moon");
-            Console.WriteLine("B - On the Sun");
-            Console.WriteLine("C - On the Earth");
+            Console.WriteLine("A - On any beach in Bulgaria");
+            Console.WriteLine("B - On the black sea coast in Bulgaria");
+            Console.WriteLine("C - On the red sea coast in Bulgaria");
             input = Console.ReadLine();
-            if (input.ToLower() == "a")
+            if (input.ToLower() == "b")
             {
                 answer = true;
             }
@@ -337,13 +337,13 @@ namespace visionering_og_dokumentationsopgave
         {
             bool answer = false;
             string input = "";
-            Console.WriteLine("What killed the Dinosaurs?");
+            Console.WriteLine("What is the purpose of GIT?");
             Console.WriteLine("");
-            Console.WriteLine("A - Humans");
-            Console.WriteLine("B - Aliens");
-            Console.WriteLine("C - A huge asteroid");
+            Console.WriteLine("A - To easier work together in teams as a programmer");
+            Console.WriteLine("B - To automate robots so programmers don't have huge amount of work");
+            Console.WriteLine("C - A drawing program like PhotoShop");
             input = Console.ReadLine();
-            if (input.ToLower() == "c")
+            if (input.ToLower() == "a")
             {
                 answer = true;
             }
