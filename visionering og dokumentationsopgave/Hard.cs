@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace visionering_og_dokumentationsopgave
 {
-    class Questions
+    class Medium
     {
         //Question Section:
 
@@ -160,7 +160,7 @@ namespace visionering_og_dokumentationsopgave
                 answer = true;
             }
             return answer;
-            
+
         }
 
         public bool Question10()
