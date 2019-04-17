@@ -23,9 +23,8 @@ namespace visionering_og_dokumentationsopgave
             int[] numbTakenmedium = new int[x];
             int[] numbTakenhard = new int[x];
 
-            double score = 0.00;
-            Score points = new Score();
-
+            while (true)
+            {
                 while (d != x)
                 {
                     int a = 0;
@@ -47,7 +46,7 @@ namespace visionering_og_dokumentationsopgave
                                 }
                                 else
                                 {
-                                    score = IsCorrect(easyQuestion.Questionseasy(randomquest), "easy", score);
+                                    easyQuestion.Questionseasy(randomquest);
                                     numbTakeneasy[a] = randomquest;
                                     d++;
                                     string percent1 = percentage(d);
@@ -67,7 +66,7 @@ namespace visionering_og_dokumentationsopgave
                                 }
                                 else
                                 {
-                                    score = IsCorrect(mediumQuestion.Questionsmedium(randomquest), "medium", score);
+                                    mediumQuestion.Questionsmedium(randomquest);
                                     numbTakenmedium[b] = randomquest;
                                     d++;
                                     string percent1 = percentage(d);
@@ -86,7 +85,7 @@ namespace visionering_og_dokumentationsopgave
                                 }
                                 else
                                 {
-                                    score = IsCorrect(hardQuestion.Questionshard(randomquest), "hard", score);
+                                    hardQuestion.Questionshard(randomquest);
                                     numbTakenhard[c] = randomquest;
                                     d++;
                                     string percent1 = percentage(d);
@@ -100,50 +99,35 @@ namespace visionering_og_dokumentationsopgave
 
                     }
 
-
-                    
-
                 }
-            points.Highscore(score);
-
-
-
+            }
         }
 
-        public double IsCorrect(bool a, string difficulty, double score)
+        public void IsCorrect(bool a)
         {
-            double new_score;
-            Score points = new Score();
             if (a == true)
             {
-                Console.WriteLine("\a");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("That is correct");
-                new_score = points.Points(score, difficulty);
-                Console.WriteLine("Your current total is " + new_score);
-                Console.ResetColor();                
+                Console.WriteLine("Your current total is ");
+                Console.ResetColor();
             }
             else
             {
-                Console.Beep(235, 1000);
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("That is not correct.");
                 Console.ResetColor();
-                new_score = score;
             }
-
-            return new_score;
         }
-        public string percentage(int c)
+        public string percentage(int i)
         {
             string percent = "You have made it through ";
             int a = 5;
-            int b = a * c;
+            int b = a * i;
             percent = percent + b + "% of the game";
             return percent;
         }
-        
     }
 }
 
-    
+
