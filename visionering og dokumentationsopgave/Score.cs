@@ -52,11 +52,46 @@ namespace visionering_og_dokumentationsopgave
             {
                 highest_score = score;
                 Console.WriteLine("Congrats, you have the newest highscore!!!");
+                Console.WriteLine("With a whole " + highest_score + " points!");
             }
 
             System.IO.File.WriteAllLines(@"Scores.txt", all_scores);
         }
 
+        public void Scoreboard()
+        {
+            string[] all_scores = System.IO.File.ReadAllLines(@"Scores.txt");
+            double[] scoreboard = new double[0];
+            int i = 0;
+            int j = 0;
+            double highest = 0.00;
+            double limit = 0.00;
 
+            while (i < all_scores.Length)
+            {
+                if (highest > Convert.ToDouble(all_scores[i]))
+                {
+                    highest = Convert.ToDouble(all_scores[i]);
+                }
+                i++;
+            }
+
+            i = 0;
+
+            while (i < all_scores.Length)
+            {
+                while (j < all_scores.Length)
+                {
+                    if (highest > Convert.ToDouble(all_scores[i]) && highest < limit)
+                    {
+                        highest = Convert.ToDouble(all_scores[i]);
+                    }
+                    j++;
+                }
+
+
+                i++;
+            }
+        }
     }
 }

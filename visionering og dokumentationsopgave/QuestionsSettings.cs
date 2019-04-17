@@ -24,6 +24,7 @@ namespace visionering_og_dokumentationsopgave
             int[] numbTakenhard = new int[x];
 
             double score = 0.00;
+            Score points = new Score();
 
                 while (d != x)
                 {
@@ -103,6 +104,7 @@ namespace visionering_og_dokumentationsopgave
                     
 
                 }
+            points.Highscore(score);
 
 
 
