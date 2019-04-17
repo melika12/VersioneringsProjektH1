@@ -113,6 +113,7 @@ namespace visionering_og_dokumentationsopgave
         {
             if (a == true)
             {
+                Console.WriteLine("\a");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("That is correct");
                 Console.WriteLine("Your current total is ");
@@ -120,6 +121,7 @@ namespace visionering_og_dokumentationsopgave
             }
             else
             {
+                Console.Beep(235, 1000);
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("That is not correct.");
                 Console.ResetColor();
@@ -133,6 +135,7 @@ namespace visionering_og_dokumentationsopgave
             percent = percent + b + "% of the game";
             return percent;
         }
+        
     }
 }
 
