@@ -44,9 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Players.cs" />
     <Compile Include="Easy.cs" />
     <Compile Include="Medium.cs" />
     <Compile Include="Hard.cs" />
+    <Compile Include="QuestionsSettings  -2player.cs" />
     <Compile Include="Score.cs" />
     <Compile Include="QuestionsSettings.cs" />
     <Compile Include="Program.cs" />
