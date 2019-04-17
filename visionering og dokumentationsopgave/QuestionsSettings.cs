@@ -23,8 +23,8 @@ namespace visionering_og_dokumentationsopgave
             int[] numbTakenmedium = new int[x];
             int[] numbTakenhard = new int[x];
 
-            while (true)
-            {
+            double score = 0.00;
+
                 while (d != x)
                 {
                     int a = 0;
@@ -46,7 +46,7 @@ namespace visionering_og_dokumentationsopgave
                                 }
                                 else
                                 {
-                                    easyQuestion.Questionseasy(randomquest);
+                                    score = IsCorrect(easyQuestion.Questionseasy(randomquest), "easy", score);
                                     numbTakeneasy[a] = randomquest;
                                     d++;
                                     string percent1 = percentage(d);
@@ -66,7 +66,7 @@ namespace visionering_og_dokumentationsopgave
                                 }
                                 else
                                 {
-                                    mediumQuestion.Questionsmedium(randomquest);
+                                    score = IsCorrect(mediumQuestion.Questionsmedium(randomquest), "medium", score);
                                     numbTakenmedium[b] = randomquest;
                                     d++;
                                     string percent1 = percentage(d);
@@ -85,7 +85,7 @@ namespace visionering_og_dokumentationsopgave
                                 }
                                 else
                                 {
-                                    hardQuestion.Questionshard(randomquest);
+                                    score = IsCorrect(hardQuestion.Questionshard(randomquest), "hard", score);
                                     numbTakenhard[c] = randomquest;
                                     d++;
                                     string percent1 = percentage(d);
@@ -103,21 +103,23 @@ namespace visionering_og_dokumentationsopgave
                     
 
                 }
-            }
 
 
 
         }
 
-        public void IsCorrect(bool a)
+        public double IsCorrect(bool a, string difficulty, double score)
         {
+            double new_score;
+            Score points = new Score();
             if (a == true)
             {
                 Console.WriteLine("\a");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("That is correct");
-                Console.WriteLine("Your current total is ");
-                Console.ResetColor();
+                new_score = points.Points(score, difficulty);
+                Console.WriteLine("Your current total is " + new_score);
+                Console.ResetColor();                
             }
             else
             {
@@ -125,7 +127,10 @@ namespace visionering_og_dokumentationsopgave
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("That is not correct.");
                 Console.ResetColor();
+                new_score = score;
             }
+
+            return new_score;
         }
         public string percentage(int i)
         {

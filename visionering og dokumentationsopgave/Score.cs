@@ -41,7 +41,7 @@ namespace visionering_og_dokumentationsopgave
 
                 if (Convert.ToInt32(all_scores[i]) > Convert.ToInt32(highest_score))
                 {
-                    highest_score = Convert.ToInt32(all_scores[i]);
+                    highest_score = Convert.ToDouble(all_scores[i]);
                 }
                 i++;
             }
