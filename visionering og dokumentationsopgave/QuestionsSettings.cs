@@ -134,11 +134,11 @@ namespace visionering_og_dokumentationsopgave
 
             return new_score;
         }
-        public string percentage(int i)
+        public string percentage(int c)
         {
             string percent = "You have made it through ";
             int a = 5;
-            int b = a * i;
+            int b = a * c;
             percent = percent + b + "% of the game";
             return percent;
         }
