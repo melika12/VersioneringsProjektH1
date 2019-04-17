@@ -1,4 +1,4 @@
-﻿//VersionControll_Application:
+//VersionControll_Application:
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +15,7 @@ namespace visionering_og_dokumentationsopgave
             string input = "";
             QuestionsSettings question = new QuestionsSettings();
 
+            //Indicates start game
             while (loop == true)
             {
                 Console.WriteLine("Press 1 to play.");
