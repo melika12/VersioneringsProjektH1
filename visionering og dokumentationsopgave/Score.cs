@@ -30,10 +30,18 @@ namespace visionering_og_dokumentationsopgave
 
         public void Highscore(double score)
         {
+            if (System.IO.File.Exists(@"Scores") == false)
+            {
+                string[] placeholder = new string[0];
+                System.IO.File.WriteAllLines(@"Scores.txt", placeholder);
+            }
+
             string[] prev_scores = System.IO.File.ReadAllLines(@"Scores.txt");
             string[] all_scores = new string[prev_scores.Length + 1];
             double highest_score = 0;
             int i = 0;
+
+            
 
             while (i < prev_scores.Length)
             {
@@ -60,6 +68,12 @@ namespace visionering_og_dokumentationsopgave
 
         public void Scoreboard()
         {
+            if (System.IO.File.Exists(@"Scores") == false)
+            {
+                string[] placeholder = new string[0];
+                System.IO.File.WriteAllLines(@"Scores.txt", placeholder);
+            }
+
             string[] all_scores = System.IO.File.ReadAllLines(@"Scores.txt");
             double[] scoreboard = new double[all_scores.Length];
             int i = 0;
