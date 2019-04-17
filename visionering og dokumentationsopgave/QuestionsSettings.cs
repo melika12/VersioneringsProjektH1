@@ -31,8 +31,8 @@ namespace visionering_og_dokumentationsopgave
                     int a = 0;
                     int b = 0;
                     int c = 0;
-
-                    int randommod = randomMode.Next(0, y);
+                   string Timer = Countdowntimer();
+                   int randommod = randomMode.Next(0, y);
                     int randomquest = randomQuestion.Next(0, x);
 
                     switch (randommod)
@@ -142,7 +142,42 @@ namespace visionering_og_dokumentationsopgave
             percent = percent + b + "% of the game";
             return percent;
         }
-        
+        public string Countdowntimer()
+        {
+            int timer = 1;
+
+            int sec = timer * 60;
+            Console.CursorVisible = false;
+            var daytime = new DateTime(2000, 1, 1, 0, timer, 0);
+
+            for (int i = 0; i <= timer * 60; i++, sec--)
+            {
+                //timer = timer * 60;
+
+                if (sec <= 60 && sec >= 31)
+                {
+
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
+
+                else if (sec <= 30 && sec >= 11)
+                {
+
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                }
+
+                else if (sec <= 10 && sec >= 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                }
+
+                Console.Write(daytime.ToString("mm:ss"));
+                daytime = daytime.AddSeconds(-1);
+                System.Threading.Thread.Sleep(1000);
+                Console.Clear();
+            }
+            return daytime.ToString("mm:ss");
+        }
     }
 }
 
