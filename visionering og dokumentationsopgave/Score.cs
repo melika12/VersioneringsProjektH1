@@ -92,6 +92,8 @@ namespace visionering_og_dokumentationsopgave
 
                 i++;
             }
+
+            Console.WriteLine("Dav");
         }
     }
 }
