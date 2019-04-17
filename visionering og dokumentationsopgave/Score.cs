@@ -61,39 +61,26 @@ namespace visionering_og_dokumentationsopgave
         public void Scoreboard()
         {
             string[] all_scores = System.IO.File.ReadAllLines(@"Scores.txt");
-            double[] scoreboard = new double[0];
+            double[] scoreboard = new double[all_scores.Length];
             int i = 0;
-            int j = 0;
-            double highest = 0.00;
-            double limit = 0.00;
 
             while (i < all_scores.Length)
             {
-                if (highest > Convert.ToDouble(all_scores[i]))
-                {
-                    highest = Convert.ToDouble(all_scores[i]);
-                }
+                scoreboard[i] = Convert.ToDouble(all_scores[i]);
                 i++;
             }
 
             i = 0;
 
-            while (i < all_scores.Length)
-            {
-                while (j < all_scores.Length)
-                {
-                    if (highest > Convert.ToDouble(all_scores[i]) && highest < limit)
-                    {
-                        highest = Convert.ToDouble(all_scores[i]);
-                    }
-                    j++;
-                }
+            Array.Sort(scoreboard);
+            Array.Reverse(scoreboard);
 
+            while (i < scoreboard.Length && i < 10)
+            {
+                Console.WriteLine((i+1) + ": " + scoreboard[i]);
 
                 i++;
             }
-
-            Console.WriteLine("Dav");
         }
     }
 }

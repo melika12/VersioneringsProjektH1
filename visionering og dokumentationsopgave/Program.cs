@@ -14,12 +14,14 @@ namespace visionering_og_dokumentationsopgave
             bool loop = true;
             string input = "";
             QuestionsSettings question = new QuestionsSettings();
+            Score leaderboard = new Score();
 
             //Indicates start game
             while (loop == true)
             {
                 Console.WriteLine("Press 1 to play.");
-                Console.WriteLine("Press 2 to exit.");
+                Console.WriteLine("Press 2 to view leaderboard.");
+                Console.WriteLine("Press 3 to exit.");
                 input = Console.ReadLine();
 
                 if (input == "1")
@@ -28,6 +30,11 @@ namespace visionering_og_dokumentationsopgave
                 }
 
                 if (input == "2")
+                {
+                    leaderboard.Scoreboard();
+                }
+
+                if (input == "3")
                 {
                     loop = false;
                 }
