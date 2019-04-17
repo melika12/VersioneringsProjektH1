@@ -8,14 +8,14 @@ namespace visionering_og_dokumentationsopgave
 {
     class QuestionsSettings
     {
-        bool answer;
         public void SelectQuestions()
         {
             Easy easyQuestion = new Easy();
             Medium mediumQuestion = new Medium();
             Hard hardQuestion = new Hard();
-            int x = 19;
+            int x = 20;
             int y = 2;
+            int d = 0;
             Random randomMode = new Random();
             Random randomQuestion = new Random();
 
@@ -25,12 +25,12 @@ namespace visionering_og_dokumentationsopgave
 
             while (true)
             {
-                int i = 0;
-                int a = 0;
-                int b = 0;
-                int c = 0;
-                while (i <= x)
+                while (d != x)
                 {
+                    int a = 0;
+                    int b = 0;
+                    int c = 0;
+
                     int randommod = randomMode.Next(0, y);
                     int randomquest = randomQuestion.Next(0, x);
 
@@ -48,10 +48,13 @@ namespace visionering_og_dokumentationsopgave
                                 {
                                     easyQuestion.Questionseasy(randomquest);
                                     numbTakeneasy[a] = randomquest;
+                                    d++;
+                                    string percent1 = percentage(d);
+                                    Console.WriteLine(percent1);
                                     a++;
                                 }
                             }
-                            
+
                             break;
                         case 1:
                             int l = 0;
@@ -65,6 +68,9 @@ namespace visionering_og_dokumentationsopgave
                                 {
                                     mediumQuestion.Questionsmedium(randomquest);
                                     numbTakenmedium[b] = randomquest;
+                                    d++;
+                                    string percent1 = percentage(d);
+                                    Console.WriteLine(percent1);
                                     b++;
                                 }
                             }
@@ -81,6 +87,9 @@ namespace visionering_og_dokumentationsopgave
                                 {
                                     hardQuestion.Questionshard(randomquest);
                                     numbTakenhard[c] = randomquest;
+                                    d++;
+                                    string percent1 = percentage(d);
+                                    Console.WriteLine(percent1);
                                     c++;
                                 }
                             }
@@ -90,8 +99,10 @@ namespace visionering_og_dokumentationsopgave
 
                     }
 
-                }
 
+                    
+
+                }
             }
 
 
@@ -113,6 +124,14 @@ namespace visionering_og_dokumentationsopgave
                 Console.WriteLine("That is not correct.");
                 Console.ResetColor();
             }
+        }
+        public string percentage(int i)
+        {
+            string percent = "You have made it through ";
+            int a = 5;
+            int b = a * i;
+            percent = percent + b + "% of the game";
+            return percent;
         }
     }
 }
